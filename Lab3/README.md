@@ -19,6 +19,5 @@ according to the performed preliminary analysis of the data structure.
 
 # How To Run:
 - Download and install mysql
-- Clone repo and git checkout lab1
-- Execute source REPO/sql/create.sql from mysql shell
-- Execute source REPO/sql/populate.sql from mysql shell
+- Clone repo and git checkout lab3
+- Execute source REPO/sql/lab3.sql from mysql shell
