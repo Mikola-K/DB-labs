@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:mysql://localhost:3306/kurets</property>
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        <property name="hibernate.show_sql">false</property>
+        <property name="hibernate.current_session_context_class">thread</property>
+
+        <mapping class="ua.lviv.iot.model.entity.Adress"/>
+        <mapping class="ua.lviv.iot.model.entity.Battery"/>
+        <mapping class="ua.lviv.iot.model.entity.Energy"/>
+        <mapping class="ua.lviv.iot.model.entity.Owner"/>
+        <mapping class="ua.lviv.iot.model.entity.Panel"/>
+        <mapping class="ua.lviv.iot.model.entity.SolarSystem"/>
+    </session-factory>
+</hibernate-configuration>
